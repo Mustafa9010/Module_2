@@ -19,9 +19,9 @@ omat = np.array([[0,1],[-1,0]])
 np.set_printoptions(precision=2)
 
 #given coordinates A,B,C
-A=np.array([-5,-4])
-B=np.array([3,-3])
-C=np.array([4,0])
+A=np.array([5,-2])
+B=np.array([-5,5])
+C=np.array([-2,-5])
 
 #Given D,E,F are midpoints of BC,CA,AB
 D=midpoint(B,C)

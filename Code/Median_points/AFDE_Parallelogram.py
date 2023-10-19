@@ -20,9 +20,9 @@ import shlex
 np.set_printoptions(precision=2)
 
 #Given that, 
-A = np.array([-5,-4])
-B = np.array([3,-3])
-C = np.array([4,0])
+A = np.array([5,-2])
+B = np.array([-5,5])
+C = np.array([-2,-5])
 
 #Now we calculate the co-ordinates of the mid-points D,E,F of the sides AB,BC,CA respectively
 D = midpoint(B,C)

@@ -15,9 +15,9 @@ import shlex
 #end if
 
 #The following points are given
-A = np.array([-5,-4])
-B = np.array([3,-3])
-C = np.array([4,0])
+A = np.array([5,-2])
+B = np.array([-5,5])
+C = np.array([-2,-5])
 
 #We need to find the mid points D, E,F of the sides BC, CA and AB respectively.
 # D = (B+C)/2

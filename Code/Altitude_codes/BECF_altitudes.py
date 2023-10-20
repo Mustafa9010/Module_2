@@ -13,9 +13,9 @@ from conics.funcs import circ_gen
 import subprocess
 import shlex
 
-A = np.array([-5, -4])
-B = np.array([3, -3])
-C = np.array([4, 0])
+A = np.array([5, -2])
+B = np.array([-5, 5])
+C = np.array([-2, -5])
 omat = np.array([[0, 1], [-1, 0]])
 
 D =  alt_foot(A,B,C)

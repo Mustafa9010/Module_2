@@ -11,16 +11,16 @@ from conics.funcs import circ_gen
 
 import subprocess
 import shlex
-X = np.array([19/10,-63/10])    #X is point of intersection of line AH and BC
+X = np.array([-95/79,-305/79])    #X is point of intersection of line AH and BC
 
 # Given input arrays
-A = np.array([-5, -4])
-B = np.array([3, -3])
-C = np.array([4, 0])
+A = np.array([5, -2])
+B = np.array([-5, 5])
+C = np.array([-2, -5])
 
 # H is the point of intersection of altitudes on side AB and AC from point C and B respectively...
 
-H = np.array([113/23, -168/23])  # Reference from Question 1.3.4
+H = np.array([-95/79, -305/79])  # Reference from Question 1.3.4
  
 result = int(((A - H).T) @ (B - C))    # Checking orthogonality condition...
  # printing output

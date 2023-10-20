@@ -13,9 +13,9 @@ from conics.funcs import circ_gen
 import subprocess
 import shlex
 #end if
-A = np.array([-5,-4])
-B = np.array([3,-3])
-C = np.array([4,0])
+A = np.array([5,-2])
+B = np.array([-5,5])
+C = np.array([-2,-5])
 D = alt_foot(A,B,C)
 
 #Generating all lines
@@ -56,8 +56,8 @@ plt.grid() # minor
 plt.axis('equal')
 
 #calculation code starts
-A = np.array([-5,-4])
-nt = np.array([1,3])
+A = np.array([5,-2])
+nt = np.array([3,-10])
 result = A@nt
 print(f"The equation of AD is {nt}X={result}")
 #calculation code ends

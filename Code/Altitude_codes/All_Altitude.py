@@ -15,9 +15,9 @@ import shlex
 #end if
 
 #vertices of triangle
-A = np.array([-5,-4])
-B = np.array([3,-3])
-C = np.array([4,0])
+A = np.array([5,-2])
+B = np.array([-5,5])
+C = np.array([-5,-5])
 
 #orthogonal matrice
 omat = np.array([[0, 1], [-1, 0]])

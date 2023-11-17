@@ -98,7 +98,7 @@ Angular Bisector Intersection points =
 2.658552 -2.459866 
 
 Incentre = 
-2.182098 -2.002320 
+-0.340038 -1.448470 
 
 Angular Bisector Contact Points = 
 3.217514 1.738829 2.317473 

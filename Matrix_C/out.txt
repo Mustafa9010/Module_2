@@ -97,6 +97,9 @@ Angular Bisector Line matrix =
 Angular Bisector Intersection points = 
 -0.411597 -2.137068 
 
+Incenter=
+-0.340038  -1.448470
+
 Angular Bisector Contact Points = 
 -2.840424 0.688280 1.156974 
 -2.198586 -3.847880 0.690118 

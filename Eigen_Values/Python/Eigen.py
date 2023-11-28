@@ -79,5 +79,5 @@ plt.ylabel('$Y-axis$')
 plt.legend(loc='upper left')
 plt.grid() # minor
 plt.axis('equal')
-plt.savefig('eigen6.png')
+plt.savefig('Eigen6.png')
 plt.show()

@@ -1,0 +1,71 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{tasks}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tikz}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\usepackage[left=1in, right=0.5in, top=1in, bottom=1in]{geometry}
+\title{ Math computing}
+\author{ Yaswanth }
+\date{\today}
+\let\cleardoublepage\clearpage
+\begin{document}
+\section*{NCERT CLASS 12}
+\subsection*{CHAPTER 10 : EXERCISE 5.13}
+\begin{enumerate}
+\item The Scalar product of the Vector $(\hat{i}+\hat{j}+\hat{k})$ with a Unit Vector along the Sum of Vector $(2\hat{i}+4\hat{j}-5\hat{k})$ and $(\lambda \hat{i}+2\hat{j}+3\hat{k})$ is Equal to One.Find the Value of "$\lambda$". 
+\\
+
+\textbf{CONSTRUCTION STEPS :}
+\begin{enumerate}
+    \item Let us consider the three Different Vectors,
+    \begin{align}
+        a_1\hat{i}+b_1\hat{j}+c_1\hat{k} \label{eq:Equation 1}\\
+                a_2\hat{i}+b_2\hat{j}+c_2\hat{k} \label{eq:Equation 2}\\
+        a_3\hat{i}+b_3\hat{j}+c_3\hat{k} \label{eq:Equation3}
+    \end{align}
+     \item Let us assume,The Sum of the two Vectors, Equation\eqref{eq:Equation 2} and Equation\eqref{eq:Equation3},we get \begin{align}
+         (a_2+a_3)\hat{i}+(b_2+b_3)\hat{j}+(c_2+c_3)\hat{k}\label{eq:Equation4}   
+         \end{align}
+     \item Unit Vector of Equation\eqref{eq:Equation4},we get
+      \begin{align}
+          \frac{(a_2+a_3)\hat{i}+(b_2+b_3)\hat{j}+(c_2+c_3)\hat{k}}{\sqrt{(a_2+a_3)^2+(b_2+b_3)^2+(c_2+c_3)^2}} \label{eq:Eqt5}
+      \end{align}
+      \item As we know that,Scalar Product of Equation\eqref{eq:Equation 1} and Equation\eqref{eq:Eqt5} is Equals to 1,we get
+      \begin{align}
+          (a_1\hat{i}+b_1\hat{j}+c_1\hat{k})\times\frac{(a_2+a_3)\hat{i}+(b_2+b_3)\hat{j}+(c_2+c_3)\hat{k}}{\sqrt{(a_2+a_3)^2+(b_2+b_3)^2+(c_2+c_3)\hat{k}}} = 1\label{eq:Eqt6}
+      \end{align}
+      \item The final Equation is 
+      \begin{align}
+          \frac{a_1(a_2+a_3)+b_1(b_2+b_3)+c_1(c_2+c_3)}{\sqrt{(a_2+a_3)^2+(b_2+b_3)^2+(c_2+c_3)^2}}\label{eq:Eqt7}=1
+      \end{align}
+\end{enumerate}
+\textbf{INPUT MATRIX :}
+\begin{align}
+ \myvec{a_1&b_1&c_1\\a_2&b_2&c_2\\a_3&b_3&c_3}=\myvec{1 & 1 & 1\\ 2 & 4& -5 \\ \lambda &2 &3},\,
+\end{align}
+\end{enumerate}
+\end{document}
+

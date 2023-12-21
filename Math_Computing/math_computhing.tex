@@ -1,0 +1,74 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{tasks}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tikz}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\usepackage[left=1in, right=0.5in, top=1in, bottom=1in]{geometry}
+\title{ Math computing}
+\author{ Mustafa}
+\date{\today}
+\let\cleardoublepage\clearpage
+\begin{document}
+\section*{NCERT CLASS 12}
+\subsection*{CHAPTER 10 : EXERCISE 5.13}
+\begin{enumerate}
+\item The Scalar product of the Vector $(\hat{i}+\hat{j}+\hat{k})$ with a Unit Vector along the Sum of Vector $(2\hat{i}+4\hat{j}-5\hat{k})$ and $(\lambda \hat{i}+2\hat{j}+3\hat{k})$ is Equal to One.Find the Value of "$\lambda$". 
+\\
+
+\textbf{CONSTRUCTION STEPS :}
+\begin{enumerate}
+    \item Let us consider the given Data,and find $\lambda$ Value
+    \begin{align}
+        \vec{A}=\myvec{1\\2\\ \lambda};\vec{B}=\myvec{1\\4\\2};\vec{C}=\myvec{1\\-5\\3}
+    \end{align}
+       \item We know that ,\\
+       \begin{align}
+           \vec{A}^{\top}\brak{\frac{\brak{\vec{B}+\Vec{C}}}{\norm {\vec{B}+\Vec{C}}}}=1\label{eq:Eqt1}
+       \end{align}
+       \item since from given data,we get
+   \begin{align}
+    \implies  \Vec{A}^{\top}=\myvec{1&2&\lambda}\\
+            \implies   \brak {\Vec{B}+\Vec{C}}=\myvec{2\\-1\\5}\\
+          \implies  \brak{\Vec{B}+\Vec{C}}^{\top}=\myvec{2&-1&5}
+          \end{align}
+          \item For $\norm{\Vec{B}+\Vec{C}}$,
+          \begin{align}
+              \norm{\Vec{B}+\Vec{C}}=\sqrt{\brak{\Vec{B}+\Vec{C}}^{\top}\cdot\brak{\Vec{B}+\Vec{C}}}\\
+              \norm{\Vec{B}+\Vec{C}}=\sqrt{\myvec{2&-1&5}\cdot\myvec{2\\-1\\5}}\\
+             \implies   \norm{\Vec{B}+\Vec{C}}=\sqrt{30}
+          \end{align}
+          \item Substitute the Values in Equation\eqref{eq:Eqt1},then we get
+          \begin{align}   
+                      \myvec{1&2& \lambda}\myvec{\frac{2}{\sqrt{30}} \\ \frac{-1}{\sqrt{30}} \\ \frac{5}{\sqrt{30}}}=1\\
+                      \frac{5\lambda}{\sqrt{30}}=1\\       
+                     \implies \lambda=1.093151\\
+                      \implies \lambda \approx 1\\
+          \end{align}
+       Hence  $\therefore \lambda$=1;
+      \end{enumerate}
+   \end{enumerate}
+\end{document}
+

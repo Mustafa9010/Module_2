@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.9)  2 JAN 2024 05:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.9)  2 JAN 2024 09:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -748,7 +748,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--46
 Here is how much of TeX's memory you used:
  16176 strings out of 476091
  319189 string characters out of 5794081
- 1880330 words of memory out of 5000000
+ 1878330 words of memory out of 5000000
  36284 multiletter control sequences out of 15000+600000
  516123 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -762,7 +762,7 @@ ist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmsy7.pfb>
-Output written on math_comp.pdf (2 pages, 92848 bytes).
+Output written on math_comp.pdf (2 pages, 92649 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  33 compressed objects within 1 object stream

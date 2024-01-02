@@ -1,0 +1,88 @@
+\documentclass[10pt, a4paper]{article}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{tasks}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{comment}
+\usepackage{listings}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{gensymb}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{tikz}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\let\vec\mathbf
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\usepackage[left=1in, right=0.5in, top=1in, bottom=1in]{geometry}
+\title{ Math computing}
+\author{ Mustafa}
+\date{\today}
+\let\cleardoublepage\clearpage
+\begin{document}
+\section*{NCERT CLASS 12}
+\subsection*{CHAPTER 10 : EXERCISE 5.13}
+\begin{enumerate}
+\item\textbf{}The scalar product of the vector $\hat{i}+\hat{j}+\hat{k}$ with a unit vector along the sum of vectors $2\hat{i}+4\hat{j}-5\hat{k}$ and $\lambda\hat{i}+2\hat{j}+3\hat{k}$ is equal to one, Find the value of $\lambda$.
+\\\\
+\textbf{Generalized Construction:}\\
+Let us assume that,
+\begin{align}
+\vec{A} =\myvec{a_1\\a_2\\a_3} , \vec{B}=\myvec{b1\\b_2\\b_3} , \vec{C}=\myvec{c_1\\c_2\\c_3}
+\end{align}
+We now that \\
+\begin{align}
+    \implies \vec{C}=\lambda e_1+\vec{D}\label{eq:Eqt1}
+    \end{align}
+and also we know that,
+\begin{align}
+       &\implies \vec{A}^\top = \frac{\brak{\vec{B}+\vec{C}}}{\norm{\vec{B}+\vec{C}}}\\
+       &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\norm{\vec{B}+\vec{C}} \label{eq:Eqt2}
+   %    &\implies \norm{\vec{B}+\vec{C}}=\sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}
+\end{align}
+Let us consider the L.H.S of Equation\eqref{eq:Eqt2},and we get $\vec{C}$ value from \eqref{eq:Eqt1}
+\begin{align}
+    &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}\\
+   &\implies \vec{A}^\top \brak{\vec{B}+\lambda e_1+\vec{D}}\\
+   &\implies \myvec{a_1&a_2&a_3}\sbrak{\myvec{b_1\\b_2\\b_3}+\myvec{c_1\\0\\0}+\myvec{0\\c_2\\c_3}}\\
+   &\implies \myvec{a_1&a_2&a_3}\sbrak{\myvec{b_1\\b_2\\b_3}+\myvec{c_1\\c_2\\c_3}}\\
+  %&\implies \myvec{a_1&a_2&a_3}\myvec{b_1+c_1\\b_2+c_2\\b_3+c_3}\\
+   &\implies a_1(b_1+c_1)+a_2(b_2+c_2)+a(b_3+c_3)
+\end{align}
+Now let us consider R.H.S of Equation\eqref{eq:Eqt2},we get,
+\begin{align}
+    &\implies \sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}\\
+    &\implies \sqrt{\myvec{b_1+c_1&b_2+c_2&b_3+c_3}\myvec{b_1+c_1\\b_2+c_2\\b_3+c_3}}\\
+    &\implies \sqrt{\brak{b_1+c_1}^2+\brak{b_2+c_2}^2+\brak{b_3+c_3}^2}
+\end{align}
+We get Final Generalized Equation
+\begin{align}
+     &\implies a_1(b_1+c_1)+a_2(b_2+c_2)+a(b_3+c_3)= \sqrt{\brak{b_1+c_1}^2+\brak{b_2+c_2}^2+\brak{b_3+c_3}^2} \label{eq:Eqa5}
+\end{align}
+Substitute the Given Data in Equation\eqref{eq:Eqa5},
+\begin{align*}
+\myvec{a_1\\a_2\\a_3}=\myvec{1\\1\\1};\myvec{b_1\\b_2\\b_3}=\myvec{2\\4\\-5};\myvec{c_1\\c_2\\c_3}=\myvec{\lambda\\2\\3}
+\end{align*}
+we get,
+\begin{align}   
+&\implies 1\brak{2+\lambda}+1\brak{4+2}+1\brak{-5+3}=\sqrt{\brak{2+\lambda}^2+\brak{4+2}^2+\brak{-5+3}^2}\\
+& \implies \lambda +6 = \sqrt{\brak{\lambda ^2+4 \lambda +44}}\\
+& \implies\brak{ \lambda +6}^2 = \brak{\lambda} ^2+4 \brak{\lambda} +44\\
+& \implies \brak{\lambda}^2+12\brak{ \lambda }+36 = \brak{ \lambda }^2+4 \brak{\lambda} +44\\
+& \implies  8\brak{\lambda} = 8\\
+ &\implies \lambda = 1
+\end{align}
+\end{enumerate}
+\end{document}

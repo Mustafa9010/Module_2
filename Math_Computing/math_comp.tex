@@ -41,38 +41,37 @@
 We now that \\
 \begin{align}
    &\implies \vec{A}^\top = \frac{\brak{\vec{B}+\vec{C}}}{\norm{\vec{B}+\vec{C}}}\\
-       &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\norm{\vec{B}+\vec{C}} \label{eq:Eqat2}
+       &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\norm{\vec{B}+\vec{C}} \label{eq:Eqat2}\\
+       &\implies \vec{C}=\lambda\vec{e}_1+\vec{D}\label{eq:EQT-C}
     \end{align}
-    were,\\
+    were,
     \begin{align}
-        & \implies \vec{C}=\lambda e_1+\vec{D}\label{eq:Eqt1}
+       &\implies \norm{\vec{B}+\vec{C}}= \sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}
     \end{align}
-Let us consider the L.H.S of Equation\eqref{eq:Eqat2},and we get $\vec{C}$ value from \eqref{eq:Eqt1}
+From the Equation\eqref{eq:Eqat2},We can do
 \begin{align}
-    &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}\\
-   &\implies \vec{A}^\top \brak{\vec{B}+\lambda e_1+\vec{D}}
+   &\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{\brak{\vec{B}+\vec{C}}^\top\brak{\vec{B}+\vec{C}}}\\
+&\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{\norm{\vec{B}}^2+2\sbrak{\vec{B}^{\top}\vec{C}}+\norm{\vec{C}}^2}\\
+&\implies \vec{A}^\top \brak{\vec{B}+\vec{C}}=\sqrt{{\vec{B}\vec{B}^{\top}}+2\sbrak{\vec{B}^{\top}\vec{C}}+{\vec{C}^\top\vec{C}}}\label{eq:Eqt6}
 \end{align}
-Now let us consider R.H.S of Equation\eqref{eq:Eqat2},we get C value from \eqref{eq:Eqt1},
+Substitute the $\vec{C}$ Value in the Equation\eqref{eq:Eqt6},We get
 \begin{align}
-&\implies\norm{\vec{B}+\vec{C}} \\
-    &\implies \sqrt{\brak{\vec{B}+\lambda e_1+\vec{D}}^\top\brak{\vec{B}+\lambda e_1+\vec{D}}}
+&\implies\vec{A}^{\top}\brak{\vec{B}+\lambda\vec{e}_1+\vec{D}}=\sqrt{\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}}\\
+&\implies\lambda=\frac{\sqrt{\vec{B}\vec{B}^{\top}+2\brak{\vec{B}^{\top}\lambda\vec{e}_1+\vec{B}^{\top}\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}^{\top}}\brak{\lambda\vec{e}_1+\vec{D}}}-\vec{A}^\top\brak{\vec{B}+\vec{D}}}{\vec{A}^{\top}\vec{e}_1} \label{eq:final}
 \end{align}
-We get Final Generalized Equation
-\begin{align}
-   &\implies \vec{A}^\top \brak{\vec{B}+\lambda e_1+\vec{D}}=\sqrt{\brak{\vec{B}+\lambda e_1+\vec{D}}^\top\brak{\vec{B}+\lambda e_1+\vec{D}}}
-   \label{eq:Eqa5}
-\end{align}
-Substitute the Given Data in Equation\eqref{eq:Eqa5},
+Substitute the Given Data in Equation\eqref{eq:final},
 \begin{align*}
 \vec{A}=\myvec{1\\1\\1};\vec{B}=\myvec{2\\4\\-5};\vec{C}=\myvec{\lambda\\2\\3}
 \end{align*}
 we get,
 \begin{align}   
-&\implies 1\brak{2+\lambda}+1\brak{4+2}+1\brak{-5+3}=\sqrt{\brak{2+\lambda}^2+\brak{4+2}^2+\brak{-5+3}^2}\\
-& \implies \lambda +6 = \sqrt{\brak{\lambda ^2+4 \lambda +44}}\\
-& \implies\brak{ \lambda +6}^2 = \brak{\lambda} ^2+4 \brak{\lambda} +44\\
-& \implies \brak{\lambda}^2+12\brak{ \lambda }+36 = \brak{ \lambda }^2+4 \brak{\lambda} +44\\
-& \implies  8\brak{\lambda} = 8\\
+&\implies\lambda=\frac{\sqrt{45+2\brak{2\lambda-7}+\lambda^2+13}-6}{1}\\
+&\implies\lambda=\sqrt{44+4\lambda+\lambda^2}-6\\
+&\implies\lambda+6=\sqrt{44+4\lambda+\lambda^2}\\
+&\implies\brak{\lambda+6}^{2}=44+4\lambda+\lambda^2\\
+&\implies\lambda^2+36+12\lambda=44+4\lambda+\lambda^2\\
+&\implies12\lambda-4\lambda=44-36\\
+&\impliedby8\lambda=8\\
  &\implies \lambda = 1
 \end{align}
 \end{enumerate}

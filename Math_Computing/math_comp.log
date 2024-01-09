@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.9)  9 JAN 2024 06:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.10.9)  9 JAN 2024 10:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -639,7 +639,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 
 LaTeX Warning: Unused global option(s):
-    [8pt].
+    [9pt].
 
 (./math_comp.aux)
 \openout1 = `math_comp.aux'.
@@ -749,7 +749,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 38--42
  []
 
 
-Overfull \hbox (3.82626pt too wide) detected at line 69
+Overfull \hbox (20.10413pt too wide) detected at line 69
 []
  []
 
@@ -773,7 +773,7 @@ fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmsy7.pfb>
-Output written on math_comp.pdf (1 page, 90611 bytes).
+Output written on math_comp.pdf (1 page, 90911 bytes).
 PDF statistics:
  51 PDF objects out of 1000 (max. 8388607)
  31 compressed objects within 1 object stream

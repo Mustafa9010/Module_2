@@ -1,4 +1,4 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[8pt, a4paper]{article}
 \usepackage{sectsty}
 \usepackage{graphicx}
 \usepackage{amsmath}
@@ -57,21 +57,25 @@ From the Equation\eqref{eq:Eqat2},We can do
 Substitute the $\vec{C}$ Value in the Equation\eqref{eq:Eqt6},We get
 \begin{align}
 &\implies\vec{A}^{\top}\brak{\vec{B}+\lambda\vec{e}_1+\vec{D}}=\sqrt{\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}}\\
-&\implies\lambda=\frac{\sqrt{\vec{B}\vec{B}^{\top}+2\brak{\vec{B}^{\top}\lambda\vec{e}_1+\vec{B}^{\top}\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}^{\top}}\brak{\lambda\vec{e}_1+\vec{D}}}-\vec{A}^\top\brak{\vec{B}+\vec{D}}}{\vec{A}^{\top}\vec{e}_1} \label{eq:final}
 \end{align}
-Substitute the Given Data in Equation\eqref{eq:final},
+S.O.B.S,we get
+\begin{align}
+&\implies\brak{\vec{A}^{\top}\brak{\vec{B}+\lambda\vec{e}_1+\vec{D}}}^{2}=\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\brak{\lambda\vec{e}_1+\vec{D}}^{\top}\brak{\lambda\vec{e}_1+\vec{D}} \\
+&\implies\brak{\vec{A}\lambda\vec{e}_1}^{2}+\brak{\vec{A}^{\top}\vec{B}+\vec{D}}^{2}+2\brak{\vec{A}\lambda\vec{e}_1}\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}=\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\brak{\lambda\vec{e}_1+\vec{D}}+\lambda^{2}+2\lambda\vec{e}_1^{\top}\vec{D}+\vec{D}\vec{D}^{\top}\\
+&\implies\brak{\lambda^{2}}+\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}+2\brak{\vec{A}\lambda\vec{e}_1}\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}=\vec{B}\vec{B}^{\top}+2\lambda\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}+\vec{D}\vec{D}^{\top}+\lambda^{2}\\
+&\implies2\lambda\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}=\vec{B}\vec{B}^{\top}+2\lambda\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}+\vec{D}\vec{D}^{\top}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}\\
+&\implies2\lambda=\frac{\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\vec{D}+\vec{D}\vec{D}^{\top}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}}{\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}}\\
+&\implies\lambda=\frac{\vec{B}\vec{B}^{\top}+2\vec{B}^{\top}\vec{D}+\vec{D}\vec{D}^{\top}-\brak{\vec{A}^{\top}\brak{\vec{B}+\vec{D}}}^{2}}{2\sbrak{\vec{A}^\top\vec{e}_1\vec{A}^\top\brak{\vec{B}+\vec{D}}-\brak{\vec{B}^{\top}\vec{e}_1+\vec{e}_1^{\top}\vec{D}}}} \label{eq:EWQ77}
+\end{align}
+Substitute the Given Data in Equation\eqref{eq:EWQ77},
 \begin{align*}
 \vec{A}=\myvec{1\\1\\1};\vec{B}=\myvec{2\\4\\-5};\vec{C}=\myvec{\lambda\\2\\3}
 \end{align*}
 we get,
 \begin{align}   
-&\implies\lambda=\frac{\sqrt{45+2\brak{2\lambda-7}+\lambda^2+13}-6}{1}\\
-&\implies\lambda=\sqrt{44+4\lambda+\lambda^2}-6\\
-&\implies\lambda+6=\sqrt{44+4\lambda+\lambda^2}\\
-&\implies\brak{\lambda+6}^{2}=44+4\lambda+\lambda^2\\
-&\implies\lambda^2+36+12\lambda=44+4\lambda+\lambda^2\\
-&\implies12\lambda-4\lambda=44-36\\
-&\impliedby8\lambda=8\\
+&\implies\lambda=\frac{45-14+13-36}{2\brak{1\brak{6}-2}}\\
+&\implies\lambda=\frac{44-36}{8}\\
+&\impliedby\lambda=\frac{8}{8}\\
  &\implies \lambda = 1
 \end{align}
 \end{enumerate}
